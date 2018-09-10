@@ -1,3 +1,8 @@
 *.pyc
 settings.json
 client_id.json
+bin/
+include/
+lib/
+pip-selfcheck.json
+.Python
