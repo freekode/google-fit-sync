@@ -71,7 +71,7 @@ class Google:
 
     def get(self, url):
         r = self.session.get(url)
-        return json.loads(r.content)
+        return json.loads(r.content.decode('utf-8'))
 
     def get_user_weight(self, timestamp_start, timestamp_end):
         start_ns = timestamp_start * 1000 * 1000 * 1000

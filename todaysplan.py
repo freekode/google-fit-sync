@@ -22,7 +22,7 @@ class TodaysPlan:
             }),
             headers = self.get_headers())
 
-        content = json.loads(r.content)
+        content = json.loads(r.content.decode('utf-8'))
 
         self.token = content['token'];
         self.user = content['user'];
